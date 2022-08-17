@@ -3,7 +3,7 @@ import os
 import random
 import asyncio
 from replit import db
-#from keep_alive import keep_alive
+from keep_alive import keep_alive
 from raspunsuri import update_cuvinte
 from cuvinte import update_cuvinte_bruhman
 
@@ -286,6 +286,11 @@ async def vctask():
       print("Browvc already disabled")
   except:
     print('Not in voicechat')
+    
+# 24/7 SERVER
+keep_alive()
+# 24/7 SERVER
+#test
 
 # TOKEN
 my_secret = os.environ['env']
